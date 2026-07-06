@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farrell Habibie Putra Haris — ML Engineer / Applied AI Engineer</title>
+  <meta name="description" content="Portfolio of Farrell Habibie Putra Haris — Data Science graduate focused on Machine Learning Engineering and Applied AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo"><span class="mono">&gt;_</span> farrellhrs</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-small" href="assets/CV_Farrell_Habibie.pdf" target="_blank" rel="noopener">Resume ↓</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <p class="mono hero-hi">Hi, my name is</p>
+        <h1>Farrell Habibie<br /><span class="accent">Putra Haris</span></h1>
+        <h2 class="hero-sub">Machine Learning Engineer <span class="divider">/</span> Applied AI Engineer</h2>
+        <p class="hero-desc">
+          Data Science graduate from Telkom University (GPA 3.82) who builds end-to-end ML systems —
+          from time-series forecasting and NLP chatbots to computer vision on the edge and
+          on-device inference on iOS. I like taking models out of notebooks and putting them into production.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">See my work</a>
+          <a class="btn" href="https://github.com/Farrellhrs" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="assets/CV_Farrell_Habibie.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>12+</strong><span>ML projects</span></li>
+          <li><strong>4</strong><span>internships</span></li>
+          <li><strong>1st</strong><span>Adikara Data Mining 2024</span></li>
+        </ul>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" alt="Portrait of Farrell Habibie Putra Haris" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <h2 class="section-title reveal"><span class="mono section-num">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Data Science graduate from <strong>Telkom University, Bandung</strong> (2022–2026, GPA 3.82)
+            with a focus on <strong>machine learning engineering and applied AI</strong>. My work spans the full
+            lifecycle: data pipelines, feature engineering, model training and tuning, evaluation, and deployment.
+          </p>
+          <p>
+            I've shipped ML in real settings — a road-damage detection model quantized to INT8 running on a
+            Jetson Nano at <strong>Transtrack</strong>, AI-powered receipt OCR and customer-service chatbots at
+            <strong>PT. Infomedia Nusantara</strong>, and an on-device CoreML hand-sign recognizer at the
+            <strong>Apple Developer Academy</strong>. I'm especially interested in hybrid modeling (LSTM + boosting),
+            LLM-integrated systems, and making models fast enough for the real world.
+          </p>
+          <div class="skills">
+            <div class="skill-group">
+              <h3 class="mono">Languages</h3>
+              <ul class="tags"><li>Python</li><li>Java</li><li>Go</li><li>C++</li><li>Swift</li><li>SQL</li></ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="mono">ML / AI</h3>
+              <ul class="tags"><li>PyTorch</li><li>LSTM / Time Series</li><li>XGBoost · LightGBM · CatBoost</li><li>BERT / Transformers</li><li>YOLOv8</li><li>LLM Integration</li><li>MediaPipe · CoreML</li><li>FastAPI</li></ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="mono">Data &amp; Tools</h3>
+              <ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Neo4j</li><li>Looker Studio</li><li>Tableau</li><li>Git / GitHub</li><li>Xcode</li></ul>
+            </div>
+          </div>
+        </div>
+        <aside class="about-card reveal">
+          <h3>Education</h3>
+          <p class="edu-school">Telkom University — School of Computing</p>
+          <p class="edu-detail">B.Sc. Data Science · 2022–2026</p>
+          <p class="edu-detail mono">GPA 3.82 / 4.00</p>
+          <p class="edu-detail">🎓 Bank Indonesia Scholarship Awardee</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section container">
+      <h2 class="section-title reveal"><span class="mono section-num">02.</span> Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-meta mono">Feb 2026 — Present</div>
+          <div class="timeline-body">
+            <h3>ML / iOS Developer Intern <span class="at">@ Apple Developer Academy, Tangerang</span></h3>
+            <ul>
+              <li>Built an end-to-end on-device ML pipeline — MediaPipe hand landmarks → trained classifier → CoreML — for real-time hand-sign recognition in a SwiftUI iOS app.</li>
+              <li>Implemented real-time camera inference with AVFoundation and gamified UX following Apple's Human Interface Guidelines.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta mono">Jul 2025 — Feb 2026</div>
+          <div class="timeline-body">
+            <h3>Data Analyst Intern <span class="at">@ PT. Infomedia Nusantara</span></h3>
+            <ul>
+              <li>Developed sales/customer-service video analysis using audio feature extraction and speech-to-text models.</li>
+              <li>Built a personalized healthcare customer-service chatbot grounded in Puskesmas data, plus multi-BERT intent classification.</li>
+              <li>Developed an AI-powered receipt OCR &amp; verification platform for local tax reporting (PAD).</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta mono">Jul 2025 — Jan 2026</div>
+          <div class="timeline-body">
+            <h3>AI Engineer Intern (Part-Time) <span class="at">@ Transtrack</span></h3>
+            <ul>
+              <li>Built computer-vision models (detection, segmentation, classification) for road-damage detection, INT8-quantized for real-time edge inference on Jetson Nano.</li>
+              <li>Developed a predictive-maintenance dashboard for fleet vehicles.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta mono">Aug 2024 — Aug 2025</div>
+          <div class="timeline-body">
+            <h3>Laboratory Assistant <span class="at">@ Big Data Laboratory, Telkom University</span></h3>
+            <ul>
+              <li>Supervised a movie-rating prediction study on the mflix dataset (MongoDB) and built a Node.js + MongoDB backend for Telkom's Digistar study case.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta mono">2023 — 2025</div>
+          <div class="timeline-body">
+            <h3>Data Analytics Roles <span class="at">@ AIESEC (Bandung · Indonesia · Georgia)</span></h3>
+            <ul>
+              <li>Led the Data Analytics &amp; Management team in AIESEC Bandung — Looker Studio HR dashboards, 17 inference reports, quarterly engagement trackers. Twice awarded Best Team Leader.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section container">
+      <h2 class="section-title reveal"><span class="mono section-num">03.</span> Projects</h2>
+      <div class="filters reveal" role="tablist">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="timeseries">Time Series</button>
+        <button class="filter" data-filter="nlp">NLP &amp; LLM</button>
+        <button class="filter" data-filter="cv">Computer Vision</button>
+        <button class="filter" data-filter="audio">Audio</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured reveal" data-cat="timeseries">
+          <div class="project-top"><span class="mono project-tag">Featured · Thesis</span></div>
+          <h3>Meta-Learning Hybrid LSTM–Boosting Energy Forecasting</h3>
+          <p>Automated algorithm-selection framework for residual learning in time-series forecasting. 120+ engineered meta-features, TimeGAN-based augmentation, and a meta-classifier that predicts the best boosting model (XGBoost/LightGBM/CatBoost/AdaBoost) per dataset across 20+ building-level hourly energy datasets.</p>
+          <ul class="tags"><li>LSTM</li><li>Meta-Learning</li><li>Gradient Boosting</li><li>TimeGAN</li></ul>
+          <div class="project-links"><span class="soon mono">GitHub soon</span></div>
+        </article>
+
+        <article class="project-card featured reveal" data-cat="audio">
+          <div class="project-top"><span class="mono project-tag">Featured</span></div>
+          <h3>Studiobach — Semantic Audio Retrieval Engine</h3>
+          <p>Two-stage Music Information Retrieval API (FastAPI) matching raw user audio against 50,000+ studio tracks. Late-fusion of CLAP embeddings + chroma features filters 50K tracks in &lt;0.2s; key-invariant matching via 12-shift CENS and Subsequence DTW returns exact playback timestamps.</p>
+          <ul class="tags"><li>FastAPI</li><li>CLAP Embeddings</li><li>DTW</li><li>Signal Processing</li></ul>
+          <div class="project-links"><span class="soon mono">GitHub soon</span></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="nlp">
+          <h3>Knowledge-Graph Enhanced Fake News Detection</h3>
+          <p>Extended the KAPALM architecture with LLM entity normalization, Wikidata 2-hop knowledge graphs, and centrality-based pruning. Rigorous few-shot evaluation (k=2→100, 10 seeds) across PolitiFact, GossipCop, and IndoMalay Hoax datasets.</p>
+          <ul class="tags"><li>GNN / GAT</li><li>Knowledge Graphs</li><li>SPARQL</li><li>Few-Shot</li></ul>
+          <div class="project-links"><a href="https://github.com/Farrellhrs/knowledge-graph-for-fake-news-detection-" target="_blank" rel="noopener">GitHub →</a></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="cv">
+          <h3>Road Damage Detection &amp; Segmentation (Edge)</h3>
+          <p>End-to-end pothole &amp; crack detection pipeline: LEDNet semantic segmentation and YOLOv8 detection/segmentation on merged public + custom datasets, INT8-quantized for real-time dashcam inference on NVIDIA Jetson Nano.</p>
+          <ul class="tags"><li>YOLOv8</li><li>LEDNet</li><li>INT8 Quantization</li><li>Jetson Nano</li></ul>
+          <div class="project-links"><a href="https://github.com/Farrellhrs/Road-Pothole-and-Crack-Detection" target="_blank" rel="noopener">GitHub →</a></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="nlp">
+          <h3>Two-Stage Emotion-Aware Chatbot</h3>
+          <p>Emotion-aware chatbot pairing fine-tuned BERT multi-label emotion classification (Ekman's six emotions) with Qwen for empathetic response generation, evaluated through A/B-testing statistical analysis.</p>
+          <ul class="tags"><li>BERT</li><li>Qwen LLM</li><li>A/B Testing</li></ul>
+          <div class="project-links">
+            <a href="https://github.com/Farrellhrs/two-stage-emotion-chatbot" target="_blank" rel="noopener">GitHub →</a>
+            <a href="https://github.com/Farrellhrs/bert-multilabel-emotion" target="_blank" rel="noopener">BERT model →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="nlp">
+          <h3>AI-Powered Maternal Health Chatbot</h3>
+          <p>Dual-layer BERT intent classification (15+ maternal-health intents), SentenceTransformer out-of-scope filtering, and Gemini 2.0 Flash integration with real-time database context — plus a WHO-guideline ANC reminder scheduler.</p>
+          <ul class="tags"><li>BERT</li><li>Gemini LLM</li><li>RAG-style Context</li><li>Healthcare</li></ul>
+          <div class="project-links"><a href="https://github.com/Farrellhrs/Personalized-Healthcare-Chatbot" target="_blank" rel="noopener">GitHub →</a></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="cv">
+          <h3>Naruto Jutsu Recognition — iOS App</h3>
+          <p>Real-time one/two-hand sign recognition: 12-class classifier trained on MediaPipe landmarks (96.85% test accuracy), exported to CoreML for on-device inference in SwiftUI with dynamic particle-effect jutsu gameplay.</p>
+          <ul class="tags"><li>MediaPipe</li><li>CoreML</li><li>SwiftUI</li><li>On-Device ML</li></ul>
+          <div class="project-links"><span class="soon mono">GitHub soon</span></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="cv">
+          <h3>Anti-Spoofing Face Detection</h3>
+          <p>Real-vs-fake face classification using HOG feature extraction + SVM, combined with YOLO for face detection — a lightweight liveness-detection pipeline.</p>
+          <ul class="tags"><li>YOLO</li><li>HOG + SVM</li><li>Liveness Detection</li></ul>
+          <div class="project-links"><a href="https://github.com/Farrellhrs/Anti-Spoofing-Face-Detection" target="_blank" rel="noopener">GitHub →</a></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="cv">
+          <h3>Deepfake Detector</h3>
+          <p>Prototype-to-production deepfake image detection system built in Python, exploring CNN-based classification of manipulated media.</p>
+          <ul class="tags"><li>CNN</li><li>Media Forensics</li></ul>
+          <div class="project-links">
+            <a href="https://github.com/Farrellhrs/deepfake-detector" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="timeseries">
+          <h3>Hybrid LSTM + Boosting Energy Load Forecasting</h3>
+          <p>Residual-corrected hybrid system for 24-hour-ahead campus energy prediction: Final = LSTM + boosting residual model. Grid search over 96 LSTM configs; LSTM + CatBoost cut MAPE by 1.2–1.45% on both stable and volatile loads.</p>
+          <ul class="tags"><li>LSTM</li><li>CatBoost</li><li>Residual Learning</li></ul>
+          <div class="project-links"><span class="soon mono">GitHub soon</span></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="timeseries">
+          <h3>Indonesia Food Price Index Forecasting</h3>
+          <p>Hybrid ARIMA-LSTM forecasting of 13 food commodities across 34 Indonesian provinces, enriched with Google Trends, exchange rates, and global commodity prices — MAPE 0.053. A related global-scale model won 1st place on a competition leaderboard.</p>
+          <ul class="tags"><li>ARIMA-LSTM</li><li>Forecasting</li><li>EDA</li></ul>
+          <div class="project-links"><span class="soon mono">GitHub soon</span></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="nlp">
+          <h3>Strukvaganza — AI Receipt OCR &amp; Verification</h3>
+          <p>AI-powered receipt upload and verification platform for local tax reporting: image quality gating, OCR confidence scoring, ±2% tax validation, anomaly detection, and threshold-based auto-approve/review/reject workflow.</p>
+          <ul class="tags"><li>OCR</li><li>Validation Engine</li><li>Anomaly Detection</li></ul>
+          <div class="project-links"><span class="soon mono">GitHub soon</span></div>
+        </article>
+
+        <article class="project-card reveal" data-cat="nlp">
+          <h3>BERTopic Movie–Event Influence Research</h3>
+          <p>Unified BERTopic clustering of 62,423 movies and 14,650 historical events (GPU-accelerated Sentence Transformers + UMAP), revealing an average 8.5-year lag between historical events and the movie themes they inspire across 236 clusters.</p>
+          <ul class="tags"><li>BERTopic</li><li>UMAP</li><li>Topic Modeling</li></ul>
+          <div class="project-links"><a href="https://github.com/Farrellhrs/WikiEnrich" target="_blank" rel="noopener">GitHub →</a></div>
+        </article>
+      </div>
+
+      <p class="projects-more reveal">
+        More on <a href="https://github.com/Farrellhrs?tab=repositories" target="_blank" rel="noopener">GitHub</a> — phishing/spam detection with XGBoost, predictive maintenance, sales forecasting &amp; anomaly detection, and more. Remaining projects are being uploaded soon.
+      </p>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section container">
+      <h2 class="section-title reveal"><span class="mono section-num">04.</span> Achievements</h2>
+      <ul class="achievements-grid">
+        <li class="achievement reveal"><span class="medal">🥇</span><div><strong>1st Place — Adikara Data Mining 2024</strong><span>National data mining competition</span></div></li>
+        <li class="achievement reveal"><span class="medal">🏅</span><div><strong>6th Place — EY Mental Health Data Science Competition</strong><span>2026</span></div></li>
+        <li class="achievement reveal"><span class="medal">🏅</span><div><strong>4th Place — Compfest Business IT Case Competition</strong><span>2025</span></div></li>
+        <li class="achievement reveal"><span class="medal">🎓</span><div><strong>Bank Indonesia Scholarship Awardee</strong><span>2024</span></div></li>
+        <li class="achievement reveal"><span class="medal">🏆</span><div><strong>Finalist — Gammafest Data Science Competition, IPB</strong><span>2023</span></div></li>
+        <li class="achievement reveal"><span class="medal">⭐</span><div><strong>2× Best Team Leader — AIESEC Bandung</strong><span>Q2 2024 &amp; Q4 2025</span></div></li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section container contact">
+      <h2 class="section-title reveal"><span class="mono section-num">05.</span> Get In Touch</h2>
+      <p class="contact-desc reveal">
+        I'm open to Machine Learning Engineer and Applied AI Engineer opportunities.
+        Whether you have a role, a project, or just want to talk models — my inbox is open.
+      </p>
+      <div class="contact-actions reveal">
+        <a class="btn btn-primary" href="mailto:farrellhrs@gmail.com">Say hello 👋</a>
+        <a class="btn" href="https://github.com/Farrellhrs" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/farrell-habibie" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="tel:+6287866994648">+62 878-6699-4648</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">Designed &amp; built by Farrell Habibie Putra Haris · © <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
