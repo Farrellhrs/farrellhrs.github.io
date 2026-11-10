@@ -33,7 +33,7 @@ filterButtons.forEach((btn) => {
     btn.classList.add("active");
     const filter = btn.dataset.filter;
     cards.forEach((card) => {
-      const show = filter === "all" || card.dataset.cat === filter;
+      const show = filter === "all" || card.dataset.cat.split(" ").includes(filter);
       card.classList.toggle("hidden", !show);
       if (show) card.classList.add("visible");
     });
