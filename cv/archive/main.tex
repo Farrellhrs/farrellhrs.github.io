@@ -1,0 +1,427 @@
+    %-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Farrell Habibie Putra Haris} % Your Name
+\newcommand{\degree}{Bachelor of Data Science} % Updated Degree
+\newcommand{\phone}{87866994648} % Your Phone Number
+\newcommand{\emaila}{farrellhrs@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large Farrell Habibie Putra Haris} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-87866994648}\\
+  \textbf{Applied AI Engineer (CoreML | Computer Vision | Mobile AI)} & \href{mailto:farrellhrs@gmail.com}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {farrellhrs@gmail.com}} \\
+  Telkom University (Data Science) & \href{https://github.com/Farrellhrs}{\raisebox{0.0\height}{\footnotesize \faGithub}\ Farrellhrs} \\  
+   & \href{https://www.linkedin.com/in/farrell-habibie-67b2ab24b/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ Farrell Habibie}
+\end{tabularx}
+}
+
+%-----------SUMMARY-----------
+\section{\textbf{Summary}}
+\small{
+Applied AI Engineer specializing in integrating machine learning models into real-world applications, particularly mobile apps using CoreML. Experienced in computer vision, OCR systems, time series forecasting, and edge deployment. Proven ability to design end-to-end AI pipelines from model development to production-ready deployment.
+}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Data Science at Telkom University School of Computing}{GPA: 3.82}
+      {Telkom University, Bandung}{2022-2026}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Meta-Learning Based Hybrid LSTM–Boosting Model for Hourly Energy Forecasting}
+  {Designed an automated algorithm selection framework for residual learning in time series forecasting}
+  {Aug 2025 - Present}
+
+  \resumeItemListStart
+    \item {Developed a hybrid forecasting pipeline combining LSTM for nonlinear temporal modeling and Gradient Boosting models (LightGBM, CatBoost, XGBoost, AdaBoost) for residual correction}
+    \item {Implemented automated hyperparameter tuning for both LSTM and boosting models using structured search strategies across 20+ building-level hourly energy datasets}
+    \item {Engineered 120+ meta-features including statistical time-series descriptors, residual structure metrics, heteroskedasticity indicators, autocorrelation features, and model-specific hyperparameters}
+    \item {Built a meta-learning classification system to predict the optimal boosting algorithm based on dataset characteristics and residual behavior}
+    \item {Addressed severe class imbalance and label noise through feature selection experiments, dimensionality reduction (PCA, SelectKBest), and cost-sensitive learning strategies}
+    \item {Integrated synthetic time-series augmentation pipeline using scaling-shifting, noise injection, bootstrapped residuals, and lightweight TimeGAN generation to expand meta-dataset diversity}
+    \item {Conducted stability evaluation using repeated stratified cross-validation and balanced metrics (Macro-F1, Balanced Accuracy) for robust model assessment}
+    \item {Designed experimental framework comparing multi-class classification, binary selection, and pairwise regression-based algorithm selection strategies}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+
+  
+\resumeProject
+  {Hybrid LSTM + Boosting for Energy Load Forecasting}
+  {Designed a residual-corrected hybrid forecasting system for 24-hour ahead campus energy prediction} %Project Name
+  {Mar 2024 - Jan 2025} %Event Dates
+
+  \resumeItemListStart
+    \item {Conducted statistical analysis on hourly energy consumption data (7,735 data points) across FIT and FKB buildings, identifying volatility differences and seasonal patterns}
+    \item {Performed extensive LSTM hyperparameter tuning using Grid Search (96 combinations) over batch size, dropout, learning rate, units, layers, and optimizers}
+    \item {Built hybrid residual-correction framework: Final Prediction = LSTM Output + Boosting Residual Model}
+    \item {Implemented multiple boosting algorithms (XGBoost, LightGBM, AdaBoost, CatBoost) to model nonlinear residual errors}
+    \item {Achieved significant error reduction (MAPE ↓ 1.2–1.45\%) with LSTM + CatBoost delivering best performance on both stable and volatile load patterns}
+    \item {Deployed 24-hour ahead forecasting pipeline for operational energy optimization and peak-load fluctuation capture}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Knowledge Graph Enhanced Fake News Detection (KAPALM with Centrality Pruning)}
+  {Cross-dataset knowledge graph enhanced fake news detection with few-shot evaluation}
+  {Mar 2025 - Aug 2025}
+
+  \resumeItemListStart
+    \item {Extended KAPALM architecture and evaluated on multi-domain datasets: PolitiFact, GossipCop, and IndoMalay Hoax.}
+    \item {Introduced entity normalization using LLM + ImprovedWikidataLinker using SPARQL \& Wikidata API, constructing 2-hop Knowledge Graphs (max\_depth=2) with explicit relationship nodes (REL\_\{entity\_id\}\{property\_id\}) for richer semantic modeling.}
+    \item {Introduced centrality-based graph pruning (top-N selection) to reduce graph size while preserving informative nodes for GAT-based coarse-grained and attentive fine-grained representations.}
+    \item {Designed rigorous few-shot learning protocol (k = 2, 4, 8, 16, 100) with 10 random seeds, repeated experiments, max-min score removal, and averaged metrics to simulate low-resource scenarios.}
+    \item {Optimized training with mixed precision, graph mini-batching, and GPU acceleration (RTX 4070 Super) for scalable cross-dataset experiments.}
+  \resumeItemListEnd
+  \vspace{-2mm}
+    \resumeProject
+      {BERTopic Analysis for Movie-Event Influence Research}
+      {A Movie-Event influence analysis} %Project Name
+      {Mar 2025 - Aug 2025} %Event Dates
+
+      \resumeItemListStart
+        \item {19th and 20th Event Scraping from Wikipedia}
+        \item {Implemented unified BERTopic clustering combining 62,423 movies and 14,650 historical events to identify cross-domain thematic relationships}
+        \item {Developed GPU-accelerated embedding pipeline using Sentence Transformers with UMAP dimensionality reduction for optimal cluster analysis}
+        \item {Achieved comprehensive temporal influence analysis revealing average 8.5-year lag between historical events and corresponding movie themes}
+        \item {Created advanced visualization dashboard with 236-cluster analysis showing event-movie relationships across decades (1940-2020)}
+        \item {Discovered significant influence patterns where historical events preceded and shaped cinema themes, with peak influence periods in specific decades}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+\resumeProject
+  {Strukvaganza AI-based Receipt OCR and Verification System}
+  {AI-powered receipt upload and verification platform to optimize local tax reporting (PAD) through automated OCR and validation engine}
+  {Jul 2025 - Present}
+
+  \resumeItemListStart
+    \item {Contributed to solving OCR extraction issues by analyzing failure cases (blur, low contrast, cropped images) and improving image validation pipeline prior to text extraction.}
+    \item {Defined quality control metrics to determine receipt eligibility (resolution, orientation, noise level, completeness of key fields) before OCR processing.}
+    \item {Designed rule-based validation engine combining OCR confidence score, tax-percentage validation (±2\% tolerance), and anomaly detection to reduce false positives in receipt approval.}
+    \item {Improved receipt verification workflow by implementing confidence threshold logic: auto-approve (≥80\%), manual review (50–80\%), auto-reject (<50\%).}
+    \item {Identified and resolved system issues affecting receipt image rendering across user history, PEMDA verification dashboard, and admin analytics panel.}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Naruto Jutsu Recognition iOS App (MediaPipe + CoreML)}
+  {Real-time one/two-hand sign recognition with interactive jutsu gameplay}
+  {Mar 2026 - Present}
+
+  \resumeItemListStart
+    \item Built an end-to-end hand\_gesture\_model pipeline to train a unified 12-class hand-sign classifier from MediaPipe landmarks using fixed 126-feature vectors (left/right hand assignment + zero-padding for missing hand)
+
+    \item Prepared and validated 3,961 usable samples (3,289 one-hand, 672 two-hand), trained a Random Forest model (n\_estimators=400, class\_weight=balanced\_subsample), and achieved 96.85\% test accuracy
+
+    \item Exported the trained model to CoreML and integrated it into a SwiftUI iOS app for on-device, low-latency inference with AVFoundation camera streaming
+    \item {Implemented robust real-time recognition logic with confidence thresholding, temporal hold validation (300ms), sign normalization, and sequence progression/reset rules for Free, Tutorial, and Speed modes.}
+    \item {Designed dynamic jutsu effects (Fireball, Chidori, Burning Ash, Rasengan) using CAEmitterLayer/CAShapeLayer, with face-direction and mouth-open cues for context-aware visual feedback plus synchronized audio effects}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {AI-Powered Maternal Health Chatbot with Intent Classification}
+  {Intelligent chatbot system for maternal health monitoring using BERT classification and LLM integration} %Project Name
+  {[Jul 2025 - Aug 2025]} %Event Dates
+
+  \resumeItemListStart
+    \item {Implemented dual-layer intent classification system using fine-tuned BERT models for domain classification (KEHAMILAN/UMUM) and specific intent prediction across 15+ maternal health categories}
+    \item {Developed similarity-based out-of-scope filtering using SentenceTransformer embeddings with cosine similarity, achieving 0.74 threshold for semantic validation}
+    \item {Integrated Google Gemini 2.0 Flash Lite LLM with context-aware prompting system, incorporating real-time database queries and temporal information for personalized responses}
+    \item {Built intelligent ANC (Antenatal Care) reminder calculator following WHO guidelines with automatic scheduling based on trimester-specific intervals and pregnancy tracking}
+    \item {Designed multi-context analysis system handling ambiguous queries with confidence gap evaluation, enabling dual-prediction responses for improved accuracy}
+    \item {Created comprehensive prompt engineering framework with semantic relevance validation, preventing off-topic responses and ensuring medical information safety}
+    \item {Developed database integration layer connecting to pregnancy records, ANC visits, lab results, immunization history, and delivery data for context-rich responses}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Transtrack Road Damage Detection and Segmentation}
+  {Built end-to-end road damage detection \& segmentation pipeline optimized for edge deployment (NVIDIA Jetson Nano)}
+  {Mar 2025 - Present}
+
+  \resumeItemListStart
+      \item {Developed semantic segmentation model using LEDNet lightweight encoder-decoder architecture based on Road Damage Surface Semantic Segmentation research paper}
+      \item {Trained and evaluated YOLOv8 segmentation and detection models on merged public \& custom datasets (600+ annotated instances)}
+      \item {Achieved detection performance up to 0.389 mAP50 (pothole class) and improved F1 score to 0.306 using YOLOv8-large segmentation}
+      \item {Implemented INT8 quantization optimization to enable real-time inference on NVIDIA Jetson Nano (edge computing deployment)}
+      \item {Designed full pipeline: dataset merging, preprocessing, model training, evaluation (Precision, Recall, mAP50-95, IoU), and deployment testing with dashcam input}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+    \resumeProject
+      {Indonesia's Province Food Price Index Forecasting} %Project Name
+      {Food Price Index Forecasting using ARIMA-LSTM Hybrid model} %Project Name, Location Name
+      {Mar 2025} %Event Dates
+
+      \resumeItemListStart
+        \item {Aimed to predict food prices across 34 provinces in Indonesia using a hybrid ARIMA-LSTM approach}
+        \item {Developed a hybrid ARIMA-LSTM model where ARIMA captured trends and seasonality, while LSTM modeled nonlinear residuals}
+        \item {Utilized a dataset covering daily prices of 13 food commodities from 2022 to 2024, along with supporting data such as Google Trends, exchange rates, and global commodity prices}
+        \item {Conducted exploratory data analysis, revealing regional price disparities influenced by logistics, local production, and geography}
+        \item {Evaluated the model using Mean Absolute Percentage Error (MAPE), achieving a low error rate of 0.05308, indicating strong predictive performance}
+        \item {Achieved high prediction accuracy in stable-price regions like Java but observed deviations in high-volatility areas like Maluku and Papua}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+        \resumeProject
+      {Global Food Price Index Forecasting} %Project Name
+      {Forecasting FoodpriceIndex of every country in a global scale} %Project Name, Location Name
+      {Dec 2024 - Jan 2025} %Event Dates
+
+      \resumeItemListStart
+        \item {Conducted a research project on predicting the Food Price Index using a machine learning approach}
+        \item {Selected Linear Regression as the primary model for its simplicity and effectiveness in capturing global temporal patterns}
+        \item {Achieved a result of 9.34351 MAPE Score and gained a first place on the leaderboard with the final approach}
+        \item {Handled missing values, scaled features, and analyzed the impact of categorical variables}
+        \item {Dropped the Country column to prevent overfitting and bias, improving generalization on unseen data.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+      
+  \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Analyst Inteern}{}
+      {PT. Infomedia Nusantara}{Jul 2025 - Present}
+      \vspace{-2.0mm}
+      
+      \resumeItemListStart
+    \item {Developed a Sales/Customer Service Video Analysis using Audio Feature Extraction and Speech to Text Model}
+    \item {Created a Personalized Healthcare Customer Servicee Chatbot that uses Puskesmas Data and Business process as its foundation for personalization}
+    \item {Developed ERD and Intention Classification Model using multiple BERRT for Customer Service Chatbot}
+    \item {Developed an AI-powered receipt upload and verification platform to optimize local tax reporting (PAD) through automated OCR and validation engine}
+    \resumeItemListEnd
+
+\vspace{-3.0mm}
+
+    \resumeSubheading
+      {Part-Time AI Engineer Intern}{}
+      {Transtrack}{Jul 2025 - Preesent 2025}
+      \vspace{-2.0mm}
+      
+      \resumeItemListStart
+    \item {Developed Computer Vision Model (segmentation, classification, and detection) for road damage detection}
+    \item {Developed Predictive Maintenance Dashboard for Fleet Vehicle}
+    \resumeItemListEnd
+\vspace{-3.0mm}
+
+    \resumeSubheading
+      {Team Leader of Data Analytics and Management}{}
+      {AIESEC Bandung}{Feb 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      
+      \resumeItemListStart
+    \item {Created Looker studio Dashboard using Human Resource's Data}
+    \item {Created 17 Analysis Inferences Report}
+    \item {Conducted, Analyzed, and Created a total of 4 Engagement Quarter Survey Tracker}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Data Analyst}{}
+      {AIESEC Georgia}{Aug 2023 - Oct 2023}
+      \vspace{-2.0mm}
+      
+      \resumeItemListStart
+    \item {Responsible for co-creating, improving, and managing the MXP dashboard}
+    \item {Responsible for analyzing data from 27 MX data sources}
+    \item {Performed research about other entities to improve MXP implementation}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Market Research Analyst}{}
+      {AIESEC Indonesia}{Aug 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      
+      \resumeItemListStart
+    \item {Created 1 standardization for LCs market research}
+    \item {Create Minimum Respondent Calculator using normal distribution hypothesis}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+
+        \resumeSubheading
+      {Document Oriented Laboratory Assistant}{}
+      {Big Data Laboratory Telkom University}{Aug 2024 - Aug 2025}
+      \vspace{-2.0mm}
+
+      \resumeItemListStart
+      \item{Supervised a movie rating prediction based on mflix dataset on mongodb}
+      \item{Created a backend using nodejs that utilized mongodb as its databases for one of telkom's digistar studycase}
+      \resumeItemListEnd
+
+      \vspace{-3.0mm}
+
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\resumeSubHeadingListStart
+\resumeSubItem{1st Place Adikara Data Mining 2024}{Jan 2025}
+\resumeSubItem{4th Place Compfest Business IT Case Competition 2025}{Oct 2025}
+\resumeSubItem{Best Team Leader for Q4 - AIESEC Bandung}{Feb 2025}
+\resumeSubItem{Finalist Gammafest Data Science Competition - IPB}{Jun 2023} 
+\resumeSubItem{Best Team Leader for Quarter 2 - AIESEC in bandung}{Aug 2024}
+\resumeSubItem{Awardee of Bank Indonesia Scholarship}{Sep 2024}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, Go, C++, Swift} \\
+     \textbf{Other Tools}{: Xcode, Looker Studio, Tableau, VScode, Git, Github} \\ 
+     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB. Neo4J.} \\  
+     \textbf{Areas of Interest}{: Data Science, Business Intelligence, ML Engineer.} \\
+     \textbf{Soft Skills}{: Problem Solving, Event Management, Self-learning, Communication, Adaptability, People Management} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+-----------------------------------------------------------------------------------------------------
+\end{document}

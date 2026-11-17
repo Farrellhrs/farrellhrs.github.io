@@ -1,0 +1,333 @@
+%-------------------------
+% Resume in Latex -- 2 page condensed version
+% Author: Farrell Habibie Putra Haris
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.25cm, top=0.6cm, right=1.05cm, bottom=0.6cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+\newcommand{\name}{Farrell Habibie Putra Haris}
+\newcommand{\degree}{Bachelor of Data Science}
+\newcommand{\phone}{87866994648}
+\newcommand{\emaila}{farrellhrs@gmail.com}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}\\
+  \degree & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {School of Computing, Telkom University} & \href{https://github.com/Farrellhrs}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Farrellhrs}} \\
+   & \href{https://www.linkedin.com/in/farrell-habibie-67b2ab24b/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Farrell Habibie}}
+\end{tabularx}
+}
+
+
+%-----------ABOUT ME-----------------
+\section{\textbf{About Me}}
+\vspace{1mm}
+\begin{justify}
+\small{Data Science graduate (GPA 3.82) who has spent much of university working on people and organizations. As Team Leader of Data Analytics at AIESEC in Bandung, I built a Looker Studio HR dashboard to monitor member performance and KPIs and ran quarterly engagement surveys; I also worked on the leadership development programme AIESEC Future Leaders and led cross-division legal work as an organizing committee director. At the Apple Developer Academy I work in agile teams using challenge-based learning, testing assumptions through repeated research and iteration. Applying for the Organization \& Workforce Transformation Graduate Analyst role.}
+\end{justify}
+\vspace{-2mm}
+
+%-----------ORGANIZATIONAL-----------------
+\section{\textbf{Organizational Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Team Leader, Data Analytics and Management}{}
+      {AIESEC in Bandung}{Feb 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Managed a team of 3 staff and was responsible for data management for 10 functional areas}
+        \item {Built a Looker Studio HR dashboard to monitor member performance and KPIs}
+        \item {Conducted and analysed 4 quarterly engagement surveys and wrote inference reports from the results, part of 17 analysis inference reports in total}
+        \item {Named Best Team Leader three times, including for Sustainability in Q1}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Staff of Quality}{}
+      {AIESEC Future Leaders (leadership development programme), AIESEC in Bandung}{Jul 2023 - Feb 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Created a real-time dashboard for AFL teams and a personalised group performance dashboard for coaches}
+        \item {Managed AFL's partnerships with stakeholders such as companies, educational institutions, coaches, and participants}
+        \item {Ensured legality and documents for AFL, including 4 DocuSign MoU/LoA for speakers and 121 MoU for participants}
+        \item {Managed AFL's finance budget plan, tracker, and coach and participant database}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Market Research Analyst}{}
+      {AIESEC in Indonesia}{Aug 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Created a market research standardization for local chapters and a centralization sheet used by 27 LCs}
+        \item {Collected the market research output of all 27 LCs for each product and wrote the market research centralization inference report}
+        \item {Built a Minimum Respondent Calculator using a normal-distribution hypothesis, plus a question guideline for the research launch}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Organizing Committee Director, Legal}{}
+      {Global Village, AIESEC in Bandung}{Nov 2023 - Mar 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Created the Risk Mitigation Plan, reviewed legalities of documents, and conducted legal research}
+        \item {Responsible for the letter numbering and synergized with all divisions}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Leader of Insight and Development Subdivision}{}
+      {Himpunan Mahasiswa Data Science, Telkom University}{Feb 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Created and hosted a workshop in collaboration with CCI Summit, and created an infographic data visualization competition for senior high school students}
+        \item {Also served as a mentor in Algorithm and Programming (Apr--Jun 2024) and, with 2 other mentors, for 5 mentees in Algorithmic Complexity Analysis (Oct--Nov 2024), preparing material for mid-semester and final exams}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Data Analyst}{}
+      {AIESEC in Georgia}{Aug 2023 - Oct 2023}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Co-created, improved and managed the MXP dashboard, analysing data from 27 MX data sources}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Professional Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {iOS Developer + Machine Learning Engineer Intern}{}
+      {Apple Developer Academy @ BINUS, Tangerang}{Mar 2026 - Present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Worked in agile, cross-functional teams through 7 challenge-based learning cycles, each moving from problem framing and research to testing our assumptions and hypotheses through repeated iteration}
+        \item {Designed around users under Apple's Human Interface Guidelines, including a real-time hand-sign recognition app that reached 96.85\% test accuracy}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Data Analyst Intern}{}
+      {PT. Infomedia Nusantara}{Jul 2025 - Feb 2026}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Built a personalised healthcare customer service chatbot using Puskesmas data and business processes as its foundation}
+        \item {Developed a sales and customer service call analysis tool using speech-to-text and audio feature extraction to score service quality}
+        \item {Designed the review workflow for a receipt verification platform for local tax reporting, routing each receipt to auto-approve, manual review or auto-reject}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {AI Engineer (Project-Based, Part-Time)}{}
+      {Transtrack, in collaboration with Big Data Laboratory, Telkom University}{Jul 2025 - Jan 2026}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Built a predictive maintenance dashboard for fleet vehicles and computer vision models for road damage detection}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Laboratory Assistant, Document-Oriented Databases}{}
+      {Big Data Laboratory, Telkom University}{Aug 2024 - Aug 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Supervised a movie rating prediction module and authored the study group's practicum module}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Data Science, School of Computing}{GPA: 3.82 / 4.00}
+      {Telkom University, Bandung}{2022 - 2026}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Selected Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Two-Stage Emotion-Aware Chatbot and User Preference Study}
+  {Undergraduate thesis}
+  {2025}{}
+  \resumeItemListStart
+    \item {Built a chatbot pairing a fine-tuned BERT emotion classifier with an LLM, then ran an A/B preference study with 28 participants, analysing demographics, overall preference, and results by emotion category and topic}
+    \item {Tested preferences with binomial, chi-square, and Wilcoxon tests, and reported that the overall preference difference was not statistically significant}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Influencer Detection in a Student Community via Centrality Analysis}
+  {Network analysis of a student organization}
+  {Mar 2025}{}
+  \resumeItemListStart
+    \item {Mapped the Instagram network of the Data Science student association through two-layer scraping of 450+ followers and their own follower graphs}
+    \item {Combined Degree, Closeness, and Betweenness centrality into a composite score, evaluated each influencer's role in information dissemination, and provided insights for more effective digital communication strategies}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Meta-Learning Hybrid LSTM--Boosting for Hourly Energy Forecasting}
+  {Paid laboratory research project with a lecturer}
+  {Aug 2025 - Feb 2026}{}
+  \resumeItemListStart
+    \item {Formed and tested hypotheses about which boosting algorithm suits which dataset, engineering 120+ meta-features across 20+ building-level datasets and cutting MAPE by 1.2--1.45\% over LSTM alone}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\resumeSubHeadingListStart
+\resumePOR{Best General Board of the Year, AIESEC Future Leaders}{}{Jan 2024}
+\resumePOR{Best Staff of AIESEC Future Leaders (Q1), AIESEC in Bandung}{}{Apr 2023}
+\resumePOR{Best Team Leader (Q2 and Q4), AIESEC in Bandung}{}{Aug 2024, Feb 2025}
+\resumePOR{Best Team Leader in Sustainability (Q1), AIESEC in Bandung}{}{Apr 2024}
+\resumePOR{6th Place, EY Mental Health Data Science Competition}{}{Mar 2026}
+\resumePOR{4th Place, Compfest Business IT Case Competition 2025}{}{Oct 2025}
+\resumePOR{1st Place, Adikara Data Mining Competition 2024}{}{Jan 2025}
+\resumePOR{ASEAN+ Youth Summit, Indonesia Youth Diplomacy}{}{Oct 2023}
+\resumePOR{Awardee, Bank Indonesia Scholarship}{}{Sep 2024}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Technical skills-----------------
+\section{\textbf{Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{People \& Data Analysis}{: Looker Studio, survey design and analysis, hypothesis testing, sampling design, network analysis (NetworkX), Excel/Sheets} \\
+     \textbf{Languages \& Data}{: Python (pandas/NumPy, scikit-learn), SQL, MySQL, PostgreSQL} \\
+     \textbf{Ways of Working}{: Challenge-based learning, agile teamwork, Apple Human Interface Guidelines, DocuSign} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}

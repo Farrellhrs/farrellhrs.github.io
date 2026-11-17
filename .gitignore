@@ -1,3 +1,17 @@
 .DS_Store
 .claude/
 asset/
+
+# LaTeX build output (the named PDFs are kept; main.pdf is a build copy)
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+*.bak
+cv/**/main.pdf
+
+# Cover letters live in the private job-applications repo
+cover_letter*
+*Cover Letter*

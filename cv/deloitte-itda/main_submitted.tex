@@ -1,0 +1,337 @@
+%-------------------------
+% Resume in Latex -- 2 page condensed version
+% Author: Farrell Habibie Putra Haris
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.25cm, top=0.6cm, right=1.05cm, bottom=0.6cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+\newcommand{\name}{Farrell Habibie Putra Haris}
+\newcommand{\degree}{Bachelor of Data Science}
+\newcommand{\phone}{87866994648}
+\newcommand{\emaila}{farrellhrs@gmail.com}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}\\
+  \degree & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {School of Computing, Telkom University} & \href{https://github.com/Farrellhrs}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Farrellhrs}} \\
+   & \href{https://www.linkedin.com/in/farrell-habibie-67b2ab24b/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Farrell Habibie}}
+\end{tabularx}
+}
+
+
+%-----------ABOUT ME-----------------
+\section{\textbf{About Me}}
+\vspace{1mm}
+\begin{justify}
+\small{Data Science graduate (GPA 3.82) with internship experience in data analysis, dashboarding and rule-based validation systems. Designed the validation and exception-routing engine for an OCR receipt-verification platform used for regional tax (PAD) reporting, led an analytics team of three that delivered Looker Studio dashboards and 17 inference reports, and held AIESEC roles covering risk mitigation planning, document legality review and budget tracking. Applying for the IT, Data \& Analytics analyst role in Assurance, Jakarta.}
+\end{justify}
+\vspace{-2mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Professional Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Analyst Intern}{}
+      {PT. Infomedia Nusantara}{Jul 2025 - Feb 2026}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Designed the rule-based validation engine for Strukvaganza, an OCR receipt-verification platform for regional tax (PAD) reporting, combining OCR confidence scoring, $\pm$2\% tax-percentage tolerance, and anomaly detection}
+        \item {Implemented confidence-threshold routing that sends each receipt to auto-approve ($\geq$80\%), manual review (50--80\%), or auto-reject ($<$50\%), reducing false positives in receipt approval}
+        \item {Defined receipt eligibility quality-control metrics (resolution, orientation, noise level, completeness of key fields) and strengthened the pre-OCR validation pipeline by analysing blur, low-contrast, and cropped failure cases}
+        \item {Built a maternal-health chatbot with a two-stage fine-tuned BERT intent classifier (15+ categories) and SentenceTransformer out-of-scope filtering, plus a sales call analysis tool using speech-to-text for service quality scoring}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {iOS Developer + Machine Learning Engineer Intern}{}
+      {Apple Developer Academy @ BINUS, Tangerang}{Mar 2026 - Present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Shipped an iOS app recognising 12 hand signs in real time, training a Random Forest classifier on 3,961 MediaPipe landmark samples to 96.85\% test accuracy and converting it to CoreML for on-device inference}
+        \item {Worked in an agile team under Apple's Human Interface Guidelines, owning the full pipeline from data collection to shipped feature}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {AI Engineer (Project-Based, Part-Time)}{}
+      {Transtrack, in collaboration with Big Data Laboratory, Telkom University}{Jul 2025 - Jan 2026}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Built a predictive maintenance dashboard for fleet vehicles}
+        \item {Trained YOLOv8 detection and segmentation models for road damage (0.389 mAP50 on the pothole class) and applied INT8 quantisation for real-time inference on an NVIDIA Jetson Nano}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Laboratory Assistant, Document-Oriented Databases}{}
+      {Big Data Laboratory, Telkom University}{Aug 2024 - Aug 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Supervised a movie rating prediction module on the MongoDB mflix dataset, built a Node.js + MongoDB backend for a Telkom Digistar case study, and authored the study group's practicum module}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------ORGANIZATIONAL-----------------
+\section{\textbf{Organizational Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Team Leader, Data Analytics and Management}{}
+      {AIESEC in Bandung}{Feb 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Led an analytics team of three and owned data management across all 10 functional areas of the chapter}
+        \item {Built a Looker Studio HR dashboard and delivered 17 analysis inference reports}
+        \item {Designed, ran, and analysed 4 quarterly engagement surveys end to end}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Organizing Committee Director, Legal}{}
+      {Global Village, AIESEC in Bandung}{Nov 2023 - Mar 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Created the Risk Mitigation Plan}
+        \item {Reviewed legalities of documents}
+        \item {Conducted legal research}
+        \item {Responsible for the letter numbering}
+        \item {Synergized with all divisions}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Staff of Quality}{}
+      {AIESEC Future Leaders, AIESEC in Bandung}{Jul 2023 - Feb 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Ensured legality and documents for AFL, including 4 DocuSign MoU/LoA for speakers and 121 MoU for participants}
+        \item {Managed AFL's finance budget plan, tracker, and coach and participant database}
+        \item {Managed AFL's partnerships with stakeholders such as companies, educational institutions, coaches, and participants}
+        \item {Built a real-time programme dashboard and a personalised group performance dashboard for coaches}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Market Research Analyst}{}
+      {AIESEC in Indonesia}{Aug 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Standardised market research methodology across 27 local chapters, producing a centralised data collection sheet and question guideline}
+        \item {Built a minimum respondent calculator from normal-distribution hypothesis testing to set statistically valid sample sizes, and consolidated chapter outputs into a centralisation inference report}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Data Analyst}{}
+      {AIESEC in Georgia}{Aug 2023 - Oct 2023}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Co-built and maintained the MXP dashboard, analysing data from 27 data sources, and tracked the IXP campaign across the entity}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Data Science, School of Computing}{GPA: 3.82 / 4.00}
+      {Telkom University, Bandung}{2022 - 2026}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Selected Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Influencer Detection in a Student Community via Centrality Analysis}
+  {Social network analysis translated into a communication strategy recommendation}
+  {Mar 2025}{}
+  \resumeItemListStart
+    \item {Mapped the Instagram network of the Data Science student association through two-layer scraping of 450+ followers and their own follower graphs}
+    \item {Ranked influence using Degree, Closeness, and Betweenness centrality, combining all three into a single composite score}
+    \item {Evaluated each influencer's role in information dissemination and provided insights for developing more effective digital communication strategies}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Food Price Index Forecasting (National \& Global)}
+  {Regression and ARIMA--LSTM hybrid models for commodity price prediction}
+  {Dec 2024 - Mar 2025}{}
+  \resumeItemListStart
+    \item {Won 1st place on the competition leaderboard (9.34 MAPE) with a well-regularised regression model, dropping the country feature to prevent overfitting and bias on unseen data}
+    \item {Developed an ARIMA--LSTM hybrid over 13 commodities across 34 Indonesian provinces (2022--2024), enriched with Google Trends, exchange rate, and global price data, reaching 0.053 MAPE}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Meta-Learning Hybrid LSTM--Boosting for Hourly Energy Forecasting}
+  {Paid laboratory research project with a lecturer}
+  {Aug 2025 - Feb 2026}{}
+  \resumeItemListStart
+    \item {Paired LSTM temporal modelling with boosting residual correction (LightGBM, CatBoost, XGBoost), cutting MAPE by 1.2--1.45\% over LSTM alone across 20+ building-level datasets}
+    \item {Engineered 120+ meta-features and trained a meta-classifier predicting the best boosting algorithm per dataset, handling class imbalance with cost-sensitive learning and PCA/SelectKBest and validating on Macro-F1 with repeated stratified cross-validation}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {BERTopic Analysis of Historical Event Influence on Cinema}
+  {Large-scale topic clustering with a temporal influence dashboard}
+  {Mar 2025 - Aug 2025}{}
+  \resumeItemListStart
+    \item {Clustered 62,423 movies and 14,650 scraped historical events into 236 unified topics using Sentence Transformers embeddings with GPU-accelerated UMAP reduction}
+    \item {Quantified an average 8.5-year lag between historical events and the film themes they shaped, and built a visualisation dashboard covering 1940--2020}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\resumeSubHeadingListStart
+\resumePOR{1st Place, Adikara Data Mining Competition 2024}{}{Jan 2025}
+\resumePOR{4th Place, Compfest Business IT Case Competition 2025}{}{Oct 2025}
+\resumePOR{6th Place, EY Mental Health Data Science Competition}{}{Mar 2026}
+\resumePOR{Best General Board of the Year, AIESEC Future Leaders}{}{Jan 2024}
+\resumePOR{Best Staff of AIESEC Future Leaders (Q1), AIESEC in Bandung}{}{Apr 2023}
+\resumePOR{Best Team Leader (Q2 and Q4), AIESEC in Bandung}{}{Aug 2024, Feb 2025}
+\resumePOR{Awardee, Bank Indonesia Scholarship}{}{Sep 2024}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, Swift, Java, Go, C++} \\
+     \textbf{Analytics \& BI}{: Looker Studio, pandas/NumPy, hypothesis testing, sampling design, survey analysis, time-series forecasting, NetworkX} \\
+     \textbf{Machine Learning}{: scikit-learn, PyTorch, LightGBM/XGBoost/CatBoost, HuggingFace Transformers, BERTopic} \\
+     \textbf{Databases \& Tools}{: MySQL, PostgreSQL, MongoDB, Neo4j, Excel/Sheets, DocuSign, FastAPI, Git, Docker} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
