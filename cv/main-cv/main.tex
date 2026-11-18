@@ -155,6 +155,24 @@
 \resumeSubHeadingListStart
 
 \resumeProject
+  {HereWeGo! (Wena): Group Food Expedition iOS App}
+  {Apple Developer Academy final project: backend, data pipeline, cloud and research}
+  {Oct 2026 - Present}{}
+
+  \resumeItemListStart
+    \item {Took a major part in the research phase: existing-solutions and behaviour-gap analysis, technical feasibility by milestone, a concept testing plan and the PRD}
+    \item {Measured Google Places coverage against the team's own dataset (one on-demand search versus an area sweep of 1,345+ places), which set the data strategy: Google for live basics, our own research for halal status and menus}
+    \item {Built the place-data pipeline on Google Places API (New) in Google Cloud, with a usage guard that stops calls before the free monthly limits}
+    \item {Built AI-agent scraping with Claude that matches halal certificates from Indonesia's BPJPH register and reads menus from the open web, with import checks that reject unsupported results and fixed rules that turn the evidence into halal status (128 places in the first area)}
+    \item {Automated the research on GitHub Actions with a per-run API spend cap, a dry-run mode, loading into Supabase and a monthly coordinate refresh}
+    \item {Designed the Supabase (PostgreSQL) backend: row-level security, writes only through database functions, 10 migrations and SQL schema tests}
+    \item {Prototyped a filter-and-score group recommender and compared 4 group methods on 1,500 simulated groups; route blend gave the highest least-happy-member score in all 6 settings}
+    \item {Set up the invite domain on Cloudflare Pages with Universal Links, so invite links and QR codes open the app, with a web fallback}
+    \item {Built SwiftUI features: taste onboarding, a live hangout room synced across phones, and the expedition route with arrival check by location}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
   {Two-Stage Emotion-Aware Chatbot and User Preference Study}
   {Undergraduate thesis: emotion classification with LLM response generation, evaluated through A/B testing}
   {2025}{}
@@ -237,7 +255,7 @@
 
   \resumeItemListStart
     \item {Extended KAPALM architecture and evaluated on multi-domain datasets: PolitiFact, GossipCop, and IndoMalay Hoax.}
-    \item {Introduced entity normalization using LLM + ImprovedWikidataLinker using SPARQL \& Wikidata API, constructing 2-hop Knowledge Graphs (max\_depth=2) with explicit relationship nodes (REL\_\{entity\_id\}\{property\_id\}) for richer semantic modeling.}
+    \item {Introduced entity normalization using LLM + ImprovedWikidataLinker using SPARQL \& Wikidata API, constructing 2-hop Knowledge Graphs (maximum depth 2) with explicit relationship nodes (REL\_\{entity\_id\}\{property\_id\}) for richer semantic modeling.}
     \item {Introduced centrality-based graph pruning (top-N selection) to reduce graph size while preserving informative nodes for GAT-based coarse-grained and attentive fine-grained representations.}
     \item {Designed rigorous few-shot learning protocol (k = 2, 4, 8, 16, 100) with 10 random seeds, repeated experiments, max-min score removal, and averaged metrics to simulate low-resource scenarios.}
     \item {Optimized training with mixed precision, graph mini-batching, and GPU acceleration (RTX 4070 Super) for scalable cross-dataset experiments.}
@@ -382,6 +400,7 @@
 \item {Built and deployed a machine learning pipeline (data preprocessing, feature engineering, model training, and CoreML integration) for on-device inference}
 \item {Implemented interactive UI/UX with real-time camera input (AVFoundation) and dynamic visual effects for gamified user experience}
 \item {Applied Apple’s Human Interface Guidelines and agile project development practices in a collaborative environment}
+\item {Final project HereWeGo! (Wena): responsible for the backend, data scraping pipeline, Google Cloud and domain setup, and much of the research phase}
 \resumeItemListEnd
 \vspace{-3.0mm}
 
