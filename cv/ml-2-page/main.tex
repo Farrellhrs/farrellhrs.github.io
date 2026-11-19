@@ -137,7 +137,7 @@
 \section{\textbf{About Me}}
 \vspace{1mm}
 \begin{justify}
-\small{Data Science graduate (GPA 3.82) with internship and project experience in applied machine learning across time-series forecasting, NLP, and computer vision, shipping models from research to deployed APIs and on-device inference. Looking for a Machine Learning / AI Engineer role where I can own end-to-end model development and productionisation.}
+\small{Data Science graduate (GPA 3.82) with internship and project experience in applied machine learning across NLP, computer vision, time-series forecasting and LLM agents, shipping models from research to deployed APIs and on-device inference. Backend and database lead on my Apple Developer Academy final project (Supabase, Google Cloud, AI-agent data pipelines). Looking for a Machine Learning / AI Engineer role where I can own models from data to production.}
 \end{justify}
 \vspace{-2mm}
 
@@ -152,7 +152,8 @@
       \resumeItemListStart
         \item {Shipped an iOS app that recognises 12 hand signs in real time, training a Random Forest classifier on 3,961 MediaPipe landmark samples to 96.85\% test accuracy}
         \item {Converted the model to CoreML for on-device inference at camera frame rate, with confidence thresholding and 300\,ms temporal hold to suppress false triggers}
-        \item {Worked in an agile team under Apple's Human Interface Guidelines, owning the full pipeline from data collection to shipped feature}
+        \item {Worked in agile, cross-functional teams through 7 challenge-based learning cycles, from problem framing and research to testing assumptions through repeated iteration}
+        \item {Final project HereWeGo! (Wena): led the backend and database, and was responsible for the data scraping pipeline, Google Cloud and domain setup, and much of the research phase}
       \resumeItemListEnd
       \vspace{-3.0mm}
 
@@ -205,6 +206,28 @@
 \resumeSubHeadingListStart
 
 \resumeProject
+  {HereWeGo! (Wena): Group Food Expedition iOS App}
+  {Apple Developer Academy final project: backend and database lead; data pipeline, cloud and research}
+  {Oct 2026 - Present}{}
+  \resumeItemListStart
+    \item {Built the place-data pipeline on Google Places API (New) in Google Cloud, with a usage guard that stops calls before the free monthly limits}
+    \item {Built AI-agent scraping with Claude that matches halal certificates from Indonesia's BPJPH register and reads menus from the open web, with import checks that reject unsupported results (128 places in the first area), automated on GitHub Actions with a per-run spend cap}
+    \item {Designed the Supabase (PostgreSQL) backend: row-level security, writes only through database functions, 10 migrations and SQL schema tests}
+    \item {Prototyped a filter-and-score group recommender and compared 4 group methods on 1,500 simulated groups; route blend gave the highest least-happy-member score in all 6 settings}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Two-Stage Emotion-Aware Chatbot and User Preference Study}
+  {Undergraduate thesis: emotion classification with LLM response generation, evaluated through A/B testing}
+  {2025}{}
+  \resumeItemListStart
+    \item {Built a chatbot pairing a fine-tuned BERT multi-label emotion classifier (Ekman's six emotions) with Qwen for empathetic response generation}
+    \item {Ran an A/B preference study with 28 participants and tested preferences with binomial, chi-square, and Wilcoxon tests; the overall difference was not statistically significant}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
   {FAJAR: On-Device Air Quality Estimation from Sky Photos}
   {Multimodal CV model shipped in a SwiftUI app -- Apple Developer Academy challenge}
   {Jul 2026 - Aug 2026}{}
@@ -212,7 +235,6 @@
     \item {Built a multimodal regressor predicting US AQI from a single sky photo, fusing an EfficientNetV2-S backbone with an MLP over 32 features: haze statistics, MiDaS depth cues, YOLO11s vehicle counts, and Open-Meteo weather}
     \item {Ablated four fusion variants on 9,600 group-disjoint images; the best reached R\textsuperscript{2} 0.54 / MAE 36 AQI on held-out data and R\textsuperscript{2} 0.62 / MAE 21 AQI on phone photos, competitive with the published benchmark (R\textsuperscript{2} 0.55)}
     \item {Converted every model to CoreML for $\sim$24\,ms fully offline inference, verifying PyTorch parity to $\sim$0.0006 AQI, and added an out-of-distribution guard that rejects invalid photos rather than returning a bogus estimate}
-    \item {Shipped into a SwiftUI + Firebase app that pins each reading to a shared crowdsourced coverage map for Greater Jakarta, where monitoring stations are sparse}
   \resumeItemListEnd
   \vspace{-2mm}
 
@@ -234,7 +256,6 @@
   \resumeItemListStart
     \item {Architected a two-stage retrieval API matching raw user audio against a 50,000+ track database in under 0.2\,s, late-fusing CLAP semantic embeddings with precomputed Chroma features}
     \item {Achieved key-invariant cover song identification via 12-shift chroma rolling and CENS normalisation, solving transposition and polyphonic noise}
-    \item {Implemented subsequence DTW with custom step penalties to return exact start/end playback timestamps for each match}
   \resumeItemListEnd
   \vspace{-2mm}
 
@@ -245,17 +266,6 @@
   \resumeItemListStart
     \item {Extended the KAPALM architecture with LLM-based entity normalisation and a Wikidata/SPARQL linker, constructing 2-hop knowledge graphs with explicit relationship nodes}
     \item {Introduced centrality-based graph pruning to shrink graphs while preserving informative nodes for GAT coarse- and fine-grained representations}
-    \item {Ran a rigorous few-shot protocol (k = 2--100, 10 seeds, max-min removal) with mixed-precision GPU training for scalable cross-dataset comparison}
-  \resumeItemListEnd
-  \vspace{-2mm}
-
-\resumeProject
-  {Food Price Index Forecasting (National \& Global)}
-  {ARIMA--LSTM hybrid and regression models for commodity price prediction}
-  {Dec 2024 - Mar 2025}{}
-  \resumeItemListStart
-    \item {Won 1st place on the competition leaderboard (9.34 MAPE) with a well-regularised regression model, dropping the country feature to prevent overfitting}
-    \item {Developed an ARIMA--LSTM hybrid over 13 commodities across 34 Indonesian provinces (2022--2024), enriched with Google Trends, exchange rate, and global price data, reaching 0.053 MAPE}
   \resumeItemListEnd
   \vspace{-2mm}
 
@@ -294,7 +304,8 @@
     \small{\item{
      \textbf{Languages}{: Python, Swift, Java, Go, C++, SQL} \\
      \textbf{ML \& Data}{: PyTorch, TensorFlow/Keras, scikit-learn, LightGBM/XGBoost/CatBoost, HuggingFace Transformers, CoreML, YOLOv8, MediaPipe} \\
-     \textbf{Tools}{: FastAPI, SwiftUI, Firebase, Git/GitHub, Docker, Xcode, Looker Studio} \\
+     \textbf{Backend \& Cloud}{: FastAPI, Supabase, Google Cloud (Places API), GitHub Actions, Cloudflare Pages, Firebase, Docker} \\
+     \textbf{Tools}{: SwiftUI, Xcode, Git/GitHub, Claude API (agents), Looker Studio} \\
      \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, Neo4j} \\
      \textbf{Key Strengths}{: Problem solving, self-directed learning, cross-functional communication} \\
     }}
