@@ -1,0 +1,297 @@
+%-------------------------
+% Resume in Latex -- 2 page condensed version
+% Author: Farrell Habibie Putra Haris
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+\newcommand{\name}{Farrell Habibie Putra Haris}
+\newcommand{\degree}{Bachelor of Data Science}
+\newcommand{\phone}{87866994648}
+\newcommand{\emaila}{farrellhrs@gmail.com}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}\\
+  \degree & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {School of Computing, Telkom University} & \href{https://github.com/Farrellhrs}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Farrellhrs}} \\
+   & \href{https://www.linkedin.com/in/farrell-habibie-67b2ab24b/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Farrell Habibie}}
+\end{tabularx}
+}
+
+%-----------ABOUT ME-----------------
+\section{\textbf{About Me}}
+\vspace{1mm}
+\begin{justify}
+\small{Data Science graduate (GPA 3.82) and iOS Developer + Machine Learning Engineer Intern at the Apple Developer Academy, building SwiftUI apps with on-device CoreML models, camera input and Supabase/Firebase backends. Backend and database lead on my academy final project, an iOS group food app. Looking for an iOS role where I can ship features end to end, including AI-powered ones.}
+\end{justify}
+\vspace{-2mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {iOS Developer + Machine Learning Engineer Intern}{}
+      {Apple Developer Academy @ BINUS, Tangerang}{Mar 2026 - Present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Shipped an iOS app that recognises 12 hand signs in real time, training a Random Forest classifier on 3,961 MediaPipe landmark samples to 96.85\% test accuracy}
+        \item {Converted the model to CoreML for on-device inference at camera frame rate, with confidence thresholding and 300\,ms temporal hold to suppress false triggers}
+        \item {Worked in agile, cross-functional teams through 7 challenge-based learning cycles, from problem framing and research to testing assumptions through repeated iteration}
+        \item {Final project HereWeGo! (Wena): led the backend and database, and was responsible for the data scraping pipeline, Google Cloud and domain setup, and much of the research phase}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Data Analyst Intern}{}
+      {PT. Infomedia Nusantara}{Jul 2025 - Feb 2026}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Built a maternal-health chatbot with a two-stage fine-tuned BERT intent classifier (15+ categories) plus SentenceTransformer out-of-scope filtering, cutting off-topic answers}
+        \item {Integrated Gemini 2.0 Flash Lite with context-aware prompting over live patient records to generate personalised, guideline-backed responses}
+        \item {Designed the validation engine for an OCR receipt-verification platform, combining confidence thresholds and $\pm$2\% tax tolerance to route receipts to auto-approve, review, or reject}
+        \item {Delivered a sales call analysis tool using speech-to-text and audio feature extraction for customer service quality scoring}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {AI Engineer (Project-Based, Part-Time)}{}
+      {Transtrack, in collaboration with Big Data Laboratory, Telkom University}{Jul 2025 - Jan 2026}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Trained YOLOv8 detection and segmentation models for road damage on merged public and custom datasets, reaching 0.389 mAP50 on the pothole class}
+        \item {Applied INT8 quantisation to run inference in real time on an NVIDIA Jetson Nano with dashcam input, enabling edge deployment}
+        \item {Built a predictive maintenance dashboard for fleet vehicles}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+    \resumeSubheading
+      {Laboratory Assistant}{}
+      {Big Data Laboratory, Telkom University}{Aug 2024 - Aug 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Supervised a movie rating prediction module on the MongoDB mflix dataset and built a Node.js + MongoDB backend for a Telkom Digistar case study}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Data Science, School of Computing}{GPA: 3.82 / 4.00}
+      {Telkom University, Bandung}{2022 - 2026}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Selected Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {HereWeGo! (Wena): Group Food Expedition iOS App}
+  {Apple Developer Academy final project: backend and database lead; data pipeline, cloud and research}
+  {Oct 2026 - Present}{}
+  \resumeItemListStart
+    \item {Built the place-data pipeline on Google Places API (New) in Google Cloud, with a usage guard that stops calls before the free monthly limits}
+    \item {Built AI-agent scraping with Claude that matches halal certificates from Indonesia's BPJPH register and reads menus from the open web, with import checks that reject unsupported results (128 places in the first area), automated on GitHub Actions with a per-run spend cap}
+    \item {Designed the Supabase (PostgreSQL) backend: row-level security, writes only through database functions, 10 migrations and SQL schema tests}
+    \item {Built SwiftUI features: taste onboarding, a live hangout room synced across phones, and the expedition route with arrival check by location; set up the invite domain on Cloudflare Pages with Universal Links so invite links and QR codes open the app}
+    \item {Prototyped a filter-and-score group recommender and compared 4 group methods on 1,500 simulated groups; route blend gave the highest least-happy-member score in all 6 settings}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Two-Stage Emotion-Aware Chatbot and User Preference Study}
+  {Undergraduate thesis: emotion classification with LLM response generation, evaluated through A/B testing}
+  {2025}{}
+  \resumeItemListStart
+    \item {Built a chatbot pairing a fine-tuned BERT multi-label emotion classifier (Ekman's six emotions) with Qwen for empathetic response generation}
+    \item {Ran an A/B preference study with 28 participants and tested preferences with binomial, chi-square, and Wilcoxon tests; the overall difference was not statistically significant}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {FAJAR: On-Device Air Quality Estimation from Sky Photos}
+  {Multimodal CV model shipped in a SwiftUI app -- Apple Developer Academy challenge}
+  {Jul 2026 - Aug 2026}{}
+  \resumeItemListStart
+    \item {Built a multimodal regressor predicting US AQI from a single sky photo, fusing an EfficientNetV2-S backbone with an MLP over 32 features: haze statistics, MiDaS depth cues, YOLO11s vehicle counts, and Open-Meteo weather}
+    \item {Ablated four fusion variants on 9,600 group-disjoint images; the best reached R\textsuperscript{2} 0.54 / MAE 36 AQI on held-out data and R\textsuperscript{2} 0.62 / MAE 21 AQI on phone photos, competitive with the published benchmark (R\textsuperscript{2} 0.55)}
+    \item {Converted every model to CoreML for $\sim$24\,ms fully offline inference, verifying PyTorch parity to $\sim$0.0006 AQI, and added an out-of-distribution guard that rejects invalid photos rather than returning a bogus estimate}
+    \item {Shipped into a SwiftUI + Firebase app that pins each reading to a shared crowdsourced coverage map for Greater Jakarta, where monitoring stations are sparse}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeProject
+  {Studiobach: Semantic Audio Retrieval Engine}
+  {End-to-end music information retrieval API (FastAPI, CLAP, DSP)}
+  {Apr 2026 - May 2026}{}
+  \resumeItemListStart
+    \item {Architected a two-stage retrieval API matching raw user audio against a 50,000+ track database in under 0.2\,s, late-fusing CLAP semantic embeddings with precomputed Chroma features}
+    \item {Achieved key-invariant cover song identification via 12-shift chroma rolling and CENS normalisation, solving transposition and polyphonic noise}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+\resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------ORGANISATIONAL-----------------
+\section{\textbf{Organizational Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Team Leader, Data Analytics and Management}{}
+      {AIESEC in Bandung}{Feb 2024 - Feb 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Led the analytics team: built a Looker Studio HR dashboard, delivered 17 inference reports, and ran 4 quarterly engagement surveys end to end}
+        \item {Earlier roles: Market Research Analyst (AIESEC Indonesia) standardising research across local chapters, and Data Analyst (AIESEC Georgia) managing the MXP dashboard over 27 data sources}
+      \resumeItemListEnd
+      \vspace{-3.0mm}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\resumeSubHeadingListStart
+\resumePOR{1st Place, Adikara Data Mining Competition 2024}{}{Jan 2025}
+\resumePOR{6th Place, EY Mental Health Data Science Competition}{}{Mar 2026}
+\resumePOR{4th Place, Compfest Business IT Case Competition 2025}{}{Oct 2025}
+\resumePOR{Awardee, Bank Indonesia Scholarship}{}{Sep 2024}
+\resumePOR{Best Team Leader (Q2 and Q4), AIESEC in Bandung}{}{Aug 2024, Feb 2025}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Swift, Java, Go, C++, SQL} \\
+     \textbf{ML \& Data}{: PyTorch, TensorFlow/Keras, scikit-learn, LightGBM/XGBoost/CatBoost, HuggingFace Transformers, CoreML, YOLOv8, MediaPipe} \\
+     \textbf{Backend \& Cloud}{: FastAPI, Supabase, Google Cloud (Places API), GitHub Actions, Cloudflare Pages, Firebase, Docker} \\
+     \textbf{iOS}{: SwiftUI, CoreML, AVFoundation, MediaPipe, Xcode, Universal Links} \\
+     \textbf{Tools}{: Git/GitHub, Claude API (agents), Looker Studio} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, Neo4j} \\
+     \textbf{Key Strengths}{: Problem solving, self-directed learning, cross-functional communication} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
